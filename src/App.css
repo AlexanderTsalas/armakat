@@ -1,0 +1,298 @@
+/* App-specific styles for 3D and animations */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3D perspective for containers */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Enhanced 3D card tilt */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.tilt-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+}
+
+/* Floating animation variations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotateX(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotateX(2deg); 
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px); 
+  }
+  25% { 
+    transform: translateY(-15px) translateX(5px); 
+  }
+  50% { 
+    transform: translateY(-10px) translateX(-5px); 
+  }
+  75% { 
+    transform: translateY(-20px) translateX(3px); 
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* Gradient orb animations */
+@keyframes orb-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.gradient-orb {
+  animation: orb-pulse 8s ease-in-out infinite;
+}
+
+.gradient-orb:nth-child(2) {
+  animation-delay: -2s;
+}
+
+.gradient-orb:nth-child(3) {
+  animation-delay: -4s;
+}
+
+/* Glow pulse animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 60px -5px rgba(99, 102, 241, 0.7);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Orbit animation for floating icons */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+/* Counter flip animation */
+@keyframes flip-in {
+  from {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.flip-in {
+  animation: flip-in 0.6s ease-out forwards;
+}
+
+/* Service card hover effect */
+.service-card {
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* FAQ accordion animation */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button press effect */
+.btn-primary:active,
+.btn-secondary:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Input focus 3D effect */
+input:focus,
+textarea:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+}
+
+/* Phone mockup 3D effect */
+.phone-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.phone-3d:hover {
+  transform: rotateY(-10deg) rotateX(5deg);
+}
+
+/* Feature card icon animation */
+.feature-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+/* Step card connector line animation */
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Pricing card featured glow */
+.pricing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Navigation glass effect enhancement */
+nav.glass {
+  box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll reveal animation classes */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-3d {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(15deg) translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-3d.revealed {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+
+/* Parallax effect for background elements */
+.parallax-slow {
+  will-change: transform;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .gradient-orb {
+    opacity: 0.3 !important;
+    filter: blur(60px);
+  }
+  
+  .tilt-card {
+    transform: none !important;
+  }
+  
+  .tilt-card:hover {
+    transform: none !important;
+  }
+  
+  .animate-float,
+  .animate-float-delayed {
+    animation: none;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .gradient-orb {
+    animation: none;
+  }
+  
+  .animate-float,
+  .animate-float-delayed,
+  .animate-orbit {
+    animation: none;
+  }
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: inherit;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img[src=""] {
+  opacity: 0;
+}
