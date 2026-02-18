@@ -24,6 +24,10 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    react: {
+      useSuspense: false,
+    },
+    returnObjects: true,
     detection: {
       order: ['localStorage', 'cookie', 'htmlTag', 'path', 'subdomain'],
       caches: ['localStorage'],

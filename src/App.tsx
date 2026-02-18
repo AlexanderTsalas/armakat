@@ -5,12 +5,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
-import { FeaturesPage } from './pages/FeaturesPage';
+import { ProfilePage } from './pages/ProfilePage';
 import { ServicesPage } from './pages/ServicesPage';
-import { PricingPage } from './pages/PricingPage';
+import { ProjectsPage } from './pages/ProjectsPage';
+import { BlogPage } from './pages/BlogPage';
 import { ContactPage } from './pages/ContactPage';
 import { useTranslation } from 'react-i18next';
-import './App.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,14 +37,15 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="relative bg-white overflow-x-hidden min-h-screen flex flex-col">
+      <div className="relative bg-black min-h-screen flex flex-col font-sans">
         <Navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/features" element={<FeaturesPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

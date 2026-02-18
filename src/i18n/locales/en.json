@@ -1,241 +1,172 @@
 {
   "nav": {
-    "features": "Features",
+    "home": "Home",
+    "profile": "Company Profile",
     "services": "Services",
-    "pricing": "Pricing",
+    "projects": "Projects & Portfolio",
+    "blog": "Blog & News",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Contact Us"
   },
   "hero": {
-    "label": "SMART HOME SOLUTIONS",
-    "title": "Smart living, built around you.",
-    "subtitle": "Armakat designs and installs home automation that feels effortless—lighting, climate, security, and entertainment, tuned to your routine.",
-    "cta1": "Book a consultation",
-    "cta2": "Explore services",
-    "trust": "Trusted by 500+ homeowners"
+    "label": "ARMAKAT | PLAN.BUILD.MANAGE.",
+    "title": "Construction & Engineering Works.",
+    "subtitle": "Comprehensive solutions for design, construction, and supervision, featuring smart technologies, energy efficiency, and transparency at every stage.",
+    "cta1": "View Projects",
+    "cta2": "Contact Us",
+    "trust": "30+ Years of Construction Excellence"
+  },
+  "about": {
+    "label": "COMPANY PROFILE",
+    "title": "Design, Construction & Supervision of Technical Works",
+    "p1": "ARMAKAT Construction & Engineering provides end-to-end design, construction, and supervision services, from small-scale renovations to complex development projects.",
+    "p2": "We combine over 30 years of experience in the construction sector with modern technologies such as BIM, energy studies, and building automation. Our goal is for every building to be functional, energy-efficient, and easy to manage.",
+    "p3": "We operate with clear schedules, detailed budgets, and continuous client updates, so you always know the status of your project and what you are paying for."
   },
   "process": {
     "label": "PROCESS",
-    "title": "How it works",
-    "subtitle": "Three simple steps to transform your home into a smart sanctuary.",
+    "title": "How we work",
+    "subtitle": "Three simple steps to realize your project.",
     "steps": [
       {
-        "title": "Consultation",
-        "desc": "We discuss your needs and create a custom plan tailored to your lifestyle."
+        "title": "Study & Design",
+        "desc": "We map out your needs and create the technical plan and budget."
       },
       {
-        "title": "Installation",
-        "desc": "Professional setup with minimal disruption to your daily routine."
+        "title": "Construction & Supervision",
+        "desc": "Project implementation with continuous engineer supervision and strict quality control."
       },
       {
-        "title": "Enjoy",
-        "desc": "Control your home from one beautiful app. Its that simple."
-      }
-    ]
-  },
-  "features": {
-    "label": "FEATURES",
-    "title": "Comfort Redefined",
-    "subtitle": "Discover how our technology integrates seamlessly into your lifestyle.",
-    "items": [
-      {
-        "title": "Adaptive Lighting",
-        "desc": "Circadian-sync lighting that mimics natural sunlight to improve sleep cycles and productivity.",
-        "details": ["Color temperature tuning", "Automated brightness", "Presence sensing", "Custom scenes"]
-      },
-      {
-        "title": "Precision Climate",
-        "desc": "Multi-zone HVAC control with humidity management and AI-driven thermal comfort optimization.",
-        "details": ["Room-by-room control", "Humidity sensors", "Energy recovery", "Smart scheduling"]
-      },
-      {
-        "title": "Fortress Security",
-        "desc": "Military-grade encryption for all entry points, paired with AI-based anomaly detection.",
-        "details": ["Biometric access", "Perimeter sensing", "Real-time alerts", "Safe-mode automation"]
-      },
-      {
-        "title": "Multi-Room Audio",
-        "desc": "Lossless audio streaming integrated invisibly into your ceilings and outdoor spaces.",
-        "details": ["In-ceiling speakers", "Outdoor zones", "Spotify/Apple integration", "Voice control"]
-      },
-      {
-        "title": "Smart Energy",
-        "desc": "Real-time monitoring of energy consumption with automatic load shedding during peak hours.",
-        "details": ["Appliance tracking", "Solar integration", "Battery monitoring", "Consumption reports"]
-      },
-      {
-        "title": "Unified Control",
-        "desc": "One interface for everything. Accessible via wall-panels, mobile, or voice commands.",
-        "details": ["Dedicated wall tablets", "Mobile dashboard", "Voice assistant", "Hidden controllers"]
+        "title": "Delivery & Support",
+        "desc": "We deliver the project with a full technical file and continuous after-delivery support."
       }
     ]
   },
   "services": {
-    "label": "SERVICES",
-    "title": "Comprehensive Solutions",
-    "subtitle": "From initial design to ongoing support, we cover every aspect of your smart home.",
+    "label": "WHAT ARMAKAT UNDERTAKES",
+    "title": "Integrated Engineering Services",
+    "subtitle": "We cover every aspect of your project with professionalism and technical excellence.",
     "items": [
       {
-        "title": "Infrastructure Design",
-        "desc": "Low-voltage wiring, network backbone layouts, and technical blueprints for high-performance homes.",
-        "features": ["Technical blueprints", "Network topology", "Wiring schematics", "Equipment racking"]
+        "title": "Studies & Technical Design",
+        "desc": "Complete architectural, structural, and MEP studies. Energy studies for better insulation and reduced operating costs.",
+        "features": ["Architectural Plans", "Structural & MEP", "Energy Performance", "Licensing Folder"]
       },
       {
-        "title": "Precision Integration",
-        "desc": "Merging disparate systems—KNX, Control4, Crestron or Home Assistant—into a single stable ecosystem.",
-        "features": ["Hardware config", "API integration", "System mesh setup", "Quality testing"]
+        "title": "Construction & Renovation",
+        "desc": "Turn-key renovation of residences and commercial spaces with energy efficiency interventions.",
+        "features": ["Kitchen/Bath Reno", "Thermal Facade", "HVAC Systems", "LED Lighting"]
       },
       {
-        "title": "Custom Programming",
-        "desc": "Tailored automation logic that anticipates your needs, from \"Good Morning\" to \"Vacation Mode\".",
-        "features": ["Scene creation", "Logic scripting", "UI customization", "Event triggers"]
+        "title": "Project Organization & Supervision",
+        "desc": "Detailed budgeting, material and crew organization, continuous engineer supervision, and quality control.",
+        "features": ["Cost Control", "Schedule Management", "Site Supervision", "Quality Certification"]
       },
       {
-        "title": "Concierge Support",
-        "desc": "White-glove 24/7 monitoring and proactive maintenance to ensure your home never hits a glitch.",
-        "features": ["Remote monitoring", "Priority dispatch", "Security audits", "Firmware updates"]
+        "title": "Photovoltaics & Energy Autonomy",
+        "desc": "Design and installation of PV systems with Net Metering and energy storage solutions.",
+        "features": ["Net Metering", "Storage Batteries", "Performance Study", "Energy Management"]
+      },
+      {
+        "title": "Smart Home & Automation",
+        "desc": "Automation for lighting, heating, and security. Remote control and smart energy management.",
+        "features": ["Mobile Control", "Lighting Automation", "Heating Scenes", "Energy Telemetry"]
+      },
+      {
+        "title": "BIM Consulting Services",
+        "desc": "BIM implementation for digital modeling, error reduction, 4D scheduling, and 5D costing.",
+        "features": ["Digital Twin", "Design Coordination", "4D Scheduling", "5D Costing"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "FEATURED PROJECTS",
+    "title": "Our Portfolio",
+    "subtitle": "From full renovations and new constructions to energy interventions and smart buildings.",
+    "cta": "REQUEST FULL PORTFOLIO",
+    "items": [
+      {
+        "title": "New Residence with Energy Design & BIM",
+        "desc": "A new residence designed with BIM and energy-first principles for peak performance.",
+        "image": "/project1.jpg"
+      },
+      {
+        "title": "Apartment Renovation with Energy Upgrade",
+        "desc": "Complete apartment refurb with a focus on energy saving and sustainability.",
+        "image": "/project2.jpg"
+      },
+      {
+        "title": "Commercial Space with Technical Supervision",
+        "desc": "Design and construction oversight for a modern professional workspace.",
+        "image": "/project3.jpg"
+      }
+    ]
+  },
+  "blog": {
+    "label": "BLOG & NEWS",
+    "title": "Technical Insights",
+    "subtitle": "Real-world examples, costs, energy solutions, and BIM in practice.",
+    "readMore": "READ MORE",
+    "items": [
+      {
+        "title": "New Construction or Renovation? What really pays off?",
+        "date": "Nov 27, 2024",
+        "desc": "A realistic look at costs, timelines, risks, and ROI before you decide."
+      },
+      {
+        "title": "Photovoltaics & Net Metering: ROI and Bills",
+        "date": "Oct 15, 2024",
+        "desc": "What Net Metering means in practice, how to read your bills, and payback periods."
+      },
+      {
+        "title": "How BIM reduces errors and unforeseen costs",
+        "date": "Sep 01, 2024",
+        "desc": "How BIM helps identify clashes and design errors before they hit the construction site."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "WHAT OUR CLIENTS SAY",
+    "title": "Trust & Reliability",
+    "items": [
+      {
+        "name": "Maria P.",
+        "text": "Budget and schedules were strictly followed. We had a clear picture of the project from start to finish, with no hidden charges."
+      },
+      {
+        "name": "John K.",
+        "text": "The ARMAKAT team coordinated all crews, proposed solutions that reduced our operating costs, and delivered exactly what was agreed."
       }
     ]
   },
   "stats": {
-    "homes": "Homes Automated",
-    "satisfaction": "Customer Satisfaction",
-    "support": "Support Available",
-    "savings": "Energy Savings"
-  },
-  "pricing": {
-    "title": "Choose Your Plan",
-    "subtitle": "Transparent pricing for every automation need.",
-    "custom": "Custom",
-    "popular": "Most Popular",
-    "onetime": "one-time",
-    "button": "Get Started",
-    "items": [
-      {
-        "name": "Essential",
-        "desc": "The foundation for a modern smart home.",
-        "features": [
-          "Smart Lighting (15 nodes)",
-          "Dual-zone Climate control",
-          "Smart Entry (2 locks)",
-          "Pro Network backbone",
-          "Mobile App access",
-          "Standard 1yr Support"
-        ]
-      },
-      {
-        "name": "Panoramic",
-        "desc": "Full-spectrum automation for luxury living.",
-        "features": [
-          "Whole-home Lighting (unlimited)",
-          "Total Climate + Air Quality",
-          "Comprehensive Security + Cameras",
-          "3-Room Multi-room Audio",
-          "Voice & Tablet control",
-          "Premium 3yr Concierge"
-        ]
-      },
-      {
-        "name": "Architect",
-        "desc": "Bespoke engineering for ultimate estates.",
-        "features": [
-          "Enterprise-grade Networking",
-          "Invisible Audio/Video integration",
-          "Custom API & logic development",
-          "Home Cinema automation",
-          "Solar/Battery load management",
-          "Lifetime VIP Support"
-        ]
-      }
-    ]
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "items": [
-      {
-        "q": "How long does installation take?",
-        "a": "Most installations are completed within 1-2 days, depending on the size of your home and the complexity of the system."
-      },
-      {
-        "q": "What devices are compatible?",
-        "a": "We work with all major smart home brands including Philips Hue, Nest, Ring, Sonos, and many more."
-      },
-      {
-        "q": "Is there ongoing support?",
-        "a": "Yes! We offer 24/7 support and maintenance packages to keep your system running smoothly."
-      },
-      {
-        "q": "Can I upgrade later?",
-        "a": "Absolutely. Our systems are designed to be scalable, so you can add more devices and features anytime."
-      }
-    ]
-  },
-  "contact": {
-    "title": "Ready to get started?",
-    "subtitle": "Book a free consultation and discover how we can transform your home.",
-    "phone": "Phone",
-    "email": "Email",
-    "location": "Location",
-    "loc_city": "New York, NY",
-    "name": "Name",
-    "name_placeholder": "Your name",
-    "message": "Message",
-    "message_placeholder": "Tell us about your project...",
-    "send": "Send Message",
-    "success": "Your message has been sent successfully!"
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "satisfaction": "Happy Clients",
+    "efficiency": "Energy Efficiency"
   },
   "footer": {
-    "subtitle": "Smart living, built around you. Professional smart home installation and automation.",
+    "subtitle": "Construction & Engineering. Integrated design, construction, and supervision solutions with smart tech and transparency.",
+    "links": "Quick Links",
     "services": "Services",
     "company": "Company",
     "support": "Support",
-    "blog": "Blog",
-    "help": "Help Center",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
     "rights": "All rights reserved.",
-    "designedBy": "designed and maintained by",
-    "copy": "© 2026 Armakat Studio.",
-    "links": "Quick Links"
+    "copy": "© 2026 ARMAKAT Construction.",
+    "designedBy": "designed by"
   },
-  "testimonials": {
-    "label": "TESTIMONIALS",
-    "title": "What our clients say",
-    "items": [
-      {
-        "name": "Maria K.",
-        "text": "Armakat transformed our home. Everything just works perfectly!"
-      },
-      {
-        "name": "John D.",
-        "text": "The installation was seamless. Highly recommend their service!"
-      },
-      {
-        "name": "Elena P.",
-        "text": "Best investment we made for our home. Amazing support team."
-      }
-    ]
-  },
-  "pages": {
-    "features": {
-      "label": "FEATURES",
-      "title": "Cutting-edge technology.",
-      "subtitle": "Explore the capabilities that make your home truly intelligent."
-    },
-    "services": {
-      "label": "SERVICES",
-      "title": "Expertise you can trust.",
-      "subtitle": "From initial concept to final installation and ongoing maintenance, we handle it all."
-    },
-    "pricing": {
-      "label": "PRICING",
-      "title": "Simple pricing.",
-      "subtitle": "Choose the plan that fits your needs and budget."
-    },
-    "contact": {
-      "label": "CONTACT",
-      "title": "Let's build your dream home.",
-      "subtitle": "Our team is ready to help you design the perfect smart home solution."
-    }
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are ready to discuss your next technical project.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "loc_city": "Athens, Greece",
+    "name": "Name",
+    "name_placeholder": "Your full name",
+    "message": "Message",
+    "message_placeholder": "Tell us about your project...",
+    "send": "Send Message",
+    "success": "Your message was sent successfully!"
   }
 }

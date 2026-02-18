@@ -7,27 +7,17 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --background-secondary: 210 40% 98%;
-    --background-tertiary: 210 40% 96%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 215 25% 27%; /* Slate 700 */
+    --foreground: 0 0% 11%; /* Apple #1d1d1f */
+    --primary: 212 100% 48%; /* Apple Blue #0071e3 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 239 84% 67%;
+    --secondary: 0 0% 96%; /* Apple Gray #f5f5f7 */
+    --secondary-foreground: 0 0% 11%;
+    --muted: 0 0% 98%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 212 100% 48%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 239 84% 67%;
-    --radius: 1rem;
+    --border: 0 0% 90%;
+    --radius: 12px;
   }
 }
 
@@ -41,15 +31,17 @@
   }
   
   body {
-    @apply bg-white text-slate-900 antialiased;
-    font-family: 'Inter', sans-serif;
+    @apply bg-black text-[#f5f5f7] antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
     overflow-x: hidden;
+    letter-spacing: -0.015em;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
     letter-spacing: -0.03em;
     line-height: 1.05;
+    font-weight: 600;
   }
 }
 
@@ -79,7 +71,7 @@
   
   /* Gradient text */
   .text-gradient {
-    background: linear-gradient(135deg, #0f172a 0%, #334155 50%, #475569 100%);
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -107,21 +99,6 @@
     transform: rotateX(5deg) rotateY(-5deg) translateZ(20px);
   }
   
-  /* Floating animation */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-  
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  .animate-float-delayed {
-    animation: float 6s ease-in-out infinite;
-    animation-delay: -3s;
-  }
-  
   /* Gradient orb */
   .gradient-orb {
     position: absolute;
@@ -133,22 +110,20 @@
   
   /* Button styles */
   .btn-primary {
-    @apply bg-slate-900 text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300;
-    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.4);
+    @apply bg-[#0071e3] text-white px-6 py-3 rounded-full font-medium transition-all duration-200;
   }
   
   .btn-primary:hover {
-    @apply bg-slate-800;
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.5);
+    @apply bg-[#0077ed];
+    opacity: 0.9;
   }
   
   .btn-secondary {
-    @apply bg-white text-slate-700 px-6 py-3 rounded-2xl font-semibold border border-slate-200 transition-all duration-300;
+    @apply text-[#0066cc] px-6 py-3 rounded-full font-medium transition-colors duration-200 hover:underline;
   }
   
   .btn-secondary:hover {
-    @apply border-indigo-300 text-indigo-600;
+    @apply border-slate-900 text-slate-900;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
   }
@@ -197,8 +172,8 @@
   
   /* Pulse glow */
   @keyframes pulseGlow {
-    0%, 100% { box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.4); }
-    50% { box-shadow: 0 0 60px -5px rgba(99, 102, 241, 0.6); }
+    0%, 100% { box-shadow: 0 0 40px -10px rgba(15, 23, 42, 0.2); }
+    50% { box-shadow: 0 0 60px -5px rgba(15, 23, 42, 0.3); }
   }
   
   .animate-pulse-glow {
@@ -222,11 +197,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #333333;
   border-radius: 4px;
 }
 
